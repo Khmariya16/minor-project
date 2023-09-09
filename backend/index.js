@@ -4,11 +4,10 @@ const express = require('express');
 
 
 //importing routers
-const userRouter = require('./routers/userRouter') //relative path
-const blockRouter = require('./routers/blockRouter')
-const blogRouter = require('./routers/blogRouter')
-const utilRouter = require('./routers/util')
+const graphicRouter = require('./routers/graphicRouter')
+const userRouter = require('./routers/userRouter')
 const cors = require('cors');
+
 
 
 //initilize express app
@@ -21,10 +20,9 @@ app.use(express.json());
 app.use(cors({
     origin: ['http://localhost:3000']
 }))
+app.use('/graphic' , graphicRouter);
 app.use('/user' , userRouter);
-app.use('/block' , blockRouter);
-app.use('/blog' , blogRouter);
-app.use('/util' , utilRouter);
+
 
 //routes --junction  -> route<-
 app.get('/', (req ,res) => {
