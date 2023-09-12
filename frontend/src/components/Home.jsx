@@ -14,16 +14,25 @@ const Home = () => {
           <button>Learn More</button>
         </div>
 
+        {/* heading of rows */}
+        <div className="container">
+          <h4 className="display-4 text-center heads">
+            SVG Editor with More Customizations
+          </h4>
+        </div>
+
+
 
         {/* ROW 1 */}
-        <div className="row">
+        <div className="container">
+        <div className="row rows">
           <div className="col-md-4">
-            <div className="achievements">
+            <div className="achievements ">
               <div className="work">
                 <i className="fas fa-atom" />
-                <p className="work-heading">Projects</p>
+                <p className="work-heading">Crop</p>
                 <p className="work-text">
-                  I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.
+                Crop out unnecessary elements from your SVG to improve its composition using the crop tool.
                 </p>
               </div>
             </div>
@@ -33,9 +42,9 @@ const Home = () => {
             <div className="achievements">
               <div className="work">
                 <i className="fas fa-skiing" />
-                <p className="work-heading">Skills</p>
+                <p className="work-heading">Border</p>
                 <p className="work-text">
-                  I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.
+                Add a border of specific color and width to your SVG to highlight the icon
                 </p>
               </div>
             </div>
@@ -45,24 +54,26 @@ const Home = () => {
             <div className="achievements">
               <div className="work">
                 <i className="fas fa-ethernet" />
-                <p className="work-heading">Network</p>
+                <p className="work-heading">Drop Shadow</p>
                 <p className="work-text">
-                  I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.
+                Drop shadows from SVG images to induce a sense of three-dimensional depth.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        </div>
 
         {/* ROW 2 */}
+        <div className="container">
         <div className="row">
           <div className="col-md-4">
             <div className="achievements">
               <div className="work">
                 <i className="fas fa-atom" />
-                <p className="work-heading">Projects</p>
+                <p className="work-heading">Rotate</p>
                 <p className="work-text">
-                  I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.
+                Use the rotate tool to spin around SVG elements left or right and play around with perspectives.
                 </p>
               </div>
             </div>
@@ -72,9 +83,9 @@ const Home = () => {
             <div className="achievements">
               <div className="work">
                 <i className="fas fa-skiing" />
-                <p className="work-heading">Skills</p>
+                <p className="work-heading">Opacity</p>
                 <p className="work-text">
-                  I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.
+                Adjust the visibility of SVG files using the opacity tool to increase or decrease their prominence.
                 </p>
               </div>
             </div>
@@ -84,18 +95,19 @@ const Home = () => {
             <div className="achievements">
               <div className="work">
                 <i className="fas fa-ethernet" />
-                <p className="work-heading">Network</p>
+                <p className="work-heading">Flip</p>
                 <p className="work-text">
-                  I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.
+                Flip and mirror SVG files upside down or sideways to obtain perfect orientation using the flip tool.
                 </p>
               </div>
             </div>
           </div>
+        </div>
         </div>
 
 
         {/* ABOUT 1*/}
-        <div className="about-me">
+        <div className="about-me me">
           <div className="about-me-text">
             <h2>Free Online SVG Editor <br />
               Tool</h2>
@@ -117,14 +129,14 @@ const Home = () => {
 
 
         {/* ABOUT 2*/}
-        <div className="about-me">
+        <div className="about-me me">
           <div className="about-me-text">
             <h2>Change Color of Individual  <br />
-              SVG Elements</h2>
+              SVG Elements</h2> <br />
             <p>
               our SVG Editor is at your service with a user-friendly interface <br />
               and instant color modification capabilities. <br />
-              Transform your SVG files into captivating works of art with ease.
+              Transform your SVG files into <br /> captivating works of art with ease.
             </p>
           </div>
           <img
@@ -136,7 +148,7 @@ const Home = () => {
 
 
         {/* ABOUT 3*/}
-        <div className="about-me">
+        <div className="about-me me">
           <div className="about-me-text">
             <h2>Merge, Rotate & Resize <br />
               Multiple SVG Files</h2><br />
@@ -163,67 +175,75 @@ const Home = () => {
         {/* HOW TO EDIT */}
 
 
-        <div _ngcontent-serverapp-c85="" class="d-flex flex-column align-items-center">
+        <div _ngcontent-serverapp-c85="" class="d-flex flex-column align-items-center me">
           <h2 _ngcontent-serverapp-c85=""> How to edit an SVG file in 4 steps </h2>
           <p _ngcontent-serverapp-c85="" class="sub-text"> Edit SVG files online without the need for complex software to create and modify flash icons and create something extraordinary. Use Pixelied's online SVG maker and editor tool to get this done in moments. Here's how.
           </p>
         </div>
 
-        <div className="container mt-5">
+        <div className="container">
           <div className="row">
-            <div className="col-md-3 col-sm-6">
-              <div className="card card-block">
+            <div className="col-md-3">
 
-                <img
-                  src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg"
-                  alt="Photo of sunset"
-                />
-                <h5 className="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-                <p className="card-text">
-                  This is a company that builds websites, web apps and e-commerce
-                  solutions.
-                </p>
+              <div className="card mt-5">
+                <div className="card-header"><button>step1</button></div>
+                <img src="https://static-assets.pixelied.com/features/svg-editor/step1-graphic.webp?v=1"
+
+                  className="card-img-top img-fluid"
+                  alt="Card Image 1" />
+                <div className="card-body">
+                  <h5 className="card-title">Card Title 1</h5>
+                  <p className="card-text">This is some sample text for Card 1.</p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6">
-              <div className="card card-block">
 
-                <img
-                  src="https://static.pexels.com/photos/7357/startup-photos.jpg"
-                  alt="Photo of sunset"
-                />
-                <h5 className="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p className="card-text">
-                  This is a company that builds websites, web .
-                </p>
+            <div className="col-md-3">
+              <div className="card mt-5">
+                <div className="card-header"><button>step2</button></div>
+                <img src="https://static-assets.pixelied.com/features/svg-editor/step2-graphic.webp?v=1"
+                  className="card-img-top img-fluid"
+                  alt="Card Image 2" />
+                <div className="card-body">
+                  <h5 className="card-title">Card Title 2</h5>
+                  <p className="card-text">This is some sample text for Card 2.</p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6">
-              <div className="card card-block">
-
-                <img
-                  src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg"
-                  alt="Photo of sunset"
-                />
-                <h5 className="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p className="card-text">
-                  This is a company that builds websites, web apps and e-commerce
-                  solutions.
-                </p>
+            <div className="col-md-3">
+              <div className="card mt-5">
+                <div className="card-header"><button>step3</button></div>
+                <img src="https://static-assets.pixelied.com/features/svg-editor/step3-graphic.webp?v=1"
+                  className="card-img-top img-fluid"
+                  alt="Card Image 3" />
+                <div className="card-body">
+                  <h5 className="card-title">Card Title 3</h5>
+                  <p className="card-text">This is some sample text for Card 3.</p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6">
-              <div className="card card-block">
-
-                <img
-                  src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg"
-                  alt="Photo of sunset"
-                />
-                <h5 className="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p className="card-text">
-                  This is a company that builds websites, web apps and e-commerce
-                  solutions.
-                </p>
+            <div className="col-md-3">
+              <div className="card mt-5">
+                <div className="card-header"><button>step4</button></div>
+                <img src="https://static-assets.pixelied.com/features/svg-editor/step4-graphic.webp?v=1"
+                  className="card-img-top img-fluid"
+                  alt="Card Image 4" />
+                <div className="card-body">
+                  <h5 className="card-title">Card Title 4</h5>
+                  <p className="card-text">This is some sample text for Card 4.</p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
           </div>

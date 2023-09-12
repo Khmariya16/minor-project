@@ -80,7 +80,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 80px;
+  padding: 20px 20px;
 }
 
 .achievements .work {
@@ -102,15 +102,17 @@ body {
 
 .achievements .work .work-heading {
   font-size: 20px;
-  color: #333333;
+  color: #746767;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0;
 }
 
 .achievements .work .work-text {
-  font-size: 15px;
+  font-size: 18px;
   color: #585858;
   margin: 10px 0;
+  
 }
 
 .about-me {
@@ -142,6 +144,7 @@ body {
   font-size: 15px;
   color: #585858;
   margin: 10px 0;
+  margin-right: 80px;
 }
 
 img{
@@ -154,6 +157,8 @@ div [class^="col-"]{
   padding-right:5px;
 }
 .card{
+  padding: 10px;
+  margin: 10px;
   transition:0.5s;
   cursor:pointer;
 }
@@ -177,6 +182,7 @@ div [class^="col-"]{
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
 }
+
 .card-text{
   height:80px;  
 }
@@ -212,3 +218,25 @@ div [class^="col-"]{
 /* frequently asked questions */
 
   
+.card-img-top {
+  height: 200px;
+}
+.card-header{
+ 
+  bottom: unset;
+  border: none;
+}
+.card-header button{
+  border-radius: 5px;
+}
+.heads{
+  margin-top: 70px;
+}
+.rows{
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.me{
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
