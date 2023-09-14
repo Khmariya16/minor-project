@@ -3,6 +3,7 @@ import useUserContext from "../UserContext";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid Email').required('Email.required'),
@@ -12,6 +13,7 @@ const LoginSchema = Yup.object().shape({
 const Login = () => {
 
   const { setLoggedIn } = useUserContext();
+  const navigate = useNavigate();
 
   const loginForm = useFormik({
     initialValues: {
@@ -42,6 +44,7 @@ const Login = () => {
         sessionStorage.setItem('user', JSON.stringify(data));
         setLoggedIn(true);
         resetForm();
+        navigate('/customizer');
 
       } else if (res.status === 401) {
         Swal.fire({

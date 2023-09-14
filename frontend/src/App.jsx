@@ -6,6 +6,7 @@ import Signup from "./components/Signup";
 import Navbar from "./components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import { UserProvider } from "./UserContext";
+import GraphicCust from "./components/GraphicCust";
 
 function App() {
   return (
@@ -14,16 +15,15 @@ function App() {
         <UserProvider>
           <Navbar />
           <AnimatePresence mode="wait">
-            <switch>
-              <Routes>
+            <Routes>
 
-                <Route element={<Home />} path="/" />
-                <Route element={<Home />} path="home" />
-                <Route element={<Login />} path="login" />
-                <Route element={<Signup />} path="signup" />
+              <Route element={<Home />} path="/" />
+              <Route element={<Home />} path="home" />
+              <Route element={<Login />} path="login" />
+              <Route element={<Signup />} path="signup" />
+              <Route element={<GraphicCust />} path="customizer" />
 
-              </Routes>
-            </switch>
+            </Routes>
           </AnimatePresence>
         </UserProvider>
       </BrowserRouter>
