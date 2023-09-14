@@ -9,18 +9,19 @@ const Home = () => {
       <main>
         {/* HEADER */}
         <div className="intro">
-          <h1>A Web Developer</h1>
-          <p>I am a web developer and I love to create websites.</p>
-          <button>Learn More</button>
+          <h3>ALL-IN-ONE DESIGN SOFTWARE SUIT</h3>
+          <p>A rich assortment of online editing tools, brimming with templates, <br />
+              icons, illustrations, and more for your creative projects.</p>
+          <button>Create</button>
         </div>
 
         {/* heading of rows */}
-        <div className="container">
+        
+        <div className="container ">
           <h4 className="display-4 text-center heads">
             SVG Editor with More Customizations
           </h4>
         </div>
-
 
 
         {/* ROW 1 */}
@@ -104,6 +105,7 @@ const Home = () => {
           </div>
         </div>
         </div>
+        
 
 
         {/* ABOUT 1*/}
@@ -175,7 +177,7 @@ const Home = () => {
         {/* HOW TO EDIT */}
 
 
-        <div _ngcontent-serverapp-c85="" class="d-flex flex-column align-items-center me">
+        <div _ngcontent-serverapp-c85="" class="d-flex flex-column align-items-center">
           <h2 _ngcontent-serverapp-c85=""> How to edit an SVG file in 4 steps </h2>
           <p _ngcontent-serverapp-c85="" class="sub-text"> Edit SVG files online without the need for complex software to create and modify flash icons and create something extraordinary. Use Pixelied's online SVG maker and editor tool to get this done in moments. Here's how.
           </p>
