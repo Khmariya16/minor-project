@@ -43,8 +43,13 @@ const GraphicCust = () => {
   return (
    
     
-    /* customizer */
+    
     <div>
+
+
+
+
+
       <textarea className='form-control w-100' rows={5} value={getSvgCode()} />
       <input type="color" onChange={updateColor} />
       <input type="range" min={10} max={100} value={size} onChange={updateSize} />
