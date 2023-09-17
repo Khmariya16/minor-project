@@ -71,8 +71,8 @@ const Login = () => {
   return (
 
 
-    <div className='a'>
-      <div className='w-65 m-5'>
+    <div className='container sign'>
+      <div className='w-32 m-5'>
         <div className='card'>
           <div className='card-body'>
             

@@ -179,12 +179,8 @@ div [class^="col-"]{
 .card-title i:hover{
   transform: scale(1.25) rotate(100deg); 
   color:#18d4ca;
-  
 }
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-}
+
 
 .card-text{
   height:80px;  
@@ -196,8 +192,6 @@ div [class^="col-"]{
   right: 0;
   bottom: 0;
   left: 0;
-  transform: scale3d(0, 0, 1);
-  transition: transform .3s ease-out 0s;
   background: rgba(255, 255, 255, 0.1);
   content: '';
   pointer-events: none;
@@ -208,9 +202,8 @@ div [class^="col-"]{
 .card::after {
   transform-origin: right bottom;
 }
-.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
-  transform: scale3d(1, 1, 1);
-}
+
+
 .align-items-center {
   align-items: center!important;
 }
@@ -248,13 +241,13 @@ div [class^="col-"]{
 
 /* SIDE BAR */
 .sidebar {
-  height: 100%;
+  height: 100vh;
   width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
   background-color: #333;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .sidebar-logo {
@@ -320,11 +313,11 @@ div [class^="col-"]{
   text-decoration: none;
   margin-right: 10px;
 }
-
 .cust{
-  margin-top: 50px;
-  margin-bottom: 30px;
-  text-align: center;
-  
+  text-align: center
+  ;
 }
+
+
+
 
