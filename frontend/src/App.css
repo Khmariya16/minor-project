@@ -244,3 +244,82 @@ div [class^="col-"]{
   padding-bottom: 100px;
   background: linear-gradient(to top , #ee9ca7 , #ffdde1);
 }
+
+
+/* SIDE BAR */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.sidebar-logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sidebar-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Social Icons at the bottom */
+.social-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* WAVE CSS */
+
