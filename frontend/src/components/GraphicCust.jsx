@@ -44,10 +44,11 @@ const GraphicCust = () => {
             <a href="#">Option 1</a>
             <a href="#">Option 2</a>
             <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+            <a href="#">Option 5</a>
           </div>
         </div>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        
         {/* Social Icons at the bottom */}
         <div className="social-icons">
           <a href="#">
@@ -60,8 +61,8 @@ const GraphicCust = () => {
       </div>
       <div style={{ marginLeft: 250, padding: 20 }}>
         {/* Your main content goes here */}
-        <h1>Main Content</h1>
-        <p>This is the main content area.</p>
+        <h1 className='display-3 cust'>CUSTOMIZER</h1>
+        <hr />
         <div>
           <textarea className='form-control w-100' rows={5} value={getSvgCode()} />
           <input type="color" onChange={updateColor} />

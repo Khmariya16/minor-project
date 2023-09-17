@@ -321,5 +321,10 @@ div [class^="col-"]{
   margin-right: 10px;
 }
 
-/* WAVE CSS */
+.cust{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
 
