@@ -16,7 +16,7 @@ const Home = () => {
         </div>
 
         {/* heading of rows */}
-        
+        <div style={{ background: 'linear-gradient( #ddd6f3 , #faaca8)' }}>
         <div className="container ">
           <h4 className="display-4 text-center heads">
             SVG Editor with More Customizations
@@ -103,6 +103,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
         </div>
         

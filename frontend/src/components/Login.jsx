@@ -70,12 +70,12 @@ const Login = () => {
 
   return (
 
+    
+      <div className="container">
+        <div className='w-32 m-5'>
+          <div className='card'>
+            <div className='card-body'>
 
-    <div className='container sign'>
-      <div className='w-32 m-5'>
-        <div className='card'>
-          <div className='card-body'>
-            
               <section className="vh-100">
                 <div className="container-fluid">
                   <div className="row">
@@ -140,10 +140,11 @@ const Login = () => {
                   </div>
                 </div>
               </section>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    
   )
 }
 

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Wave from './Wave';
+import Shapes from './Shapes';
+import Pattern from './Pattern';
+import Gradient from './Gradient';
 
 const GraphicCust = () => {
 
 
-  const toolList = ['Waves', 'Gradient', 'Shapes'];
+  const toolList = ['Waves', 'Gradient', 'Shapes','Pattern','Text'];
   const [selTool, setSelTool] = useState('');
 
   const displaySelTool = () => {
@@ -12,10 +15,16 @@ const GraphicCust = () => {
       return <Wave />
     }
     else if (selTool === 'Gradient') {
-      return <Wave />
+      return <Gradient />
     }
     else if (selTool === 'Shapes') {
-      return <Wave />
+      return <Shapes />
+    }
+    else if (selTool === 'Pattern') {
+      return <Pattern />
+    }
+    else if (selTool === 'Text') {
+      return <Text />
     }
   }
 

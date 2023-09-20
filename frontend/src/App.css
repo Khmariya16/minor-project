@@ -3,6 +3,10 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  background:  url("https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
  
 }
 /* CSS for header */
@@ -226,7 +230,7 @@ div [class^="col-"]{
   border-radius: 5px;
 }
 .heads{
-  margin-top: 70px;
+  padding-top: 70px;
 }
 .rows{
   padding-top: 80px;
@@ -316,6 +320,12 @@ div [class^="col-"]{
 .cust{
   text-align: center
   ;
+}
+.back{
+  background:  url("https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
