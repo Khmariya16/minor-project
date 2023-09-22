@@ -172,15 +172,15 @@ const Home = () => {
           />
         </div>
 
-        <hr />
+      
 
 
         {/* HOW TO EDIT */}
 
 
-        <div _ngcontent-serverapp-c85="" class="d-flex flex-column align-items-center">
-          <h2 _ngcontent-serverapp-c85=""> How to edit an SVG file in 4 steps </h2>
-          <p _ngcontent-serverapp-c85="" class="sub-text"> Edit SVG files online without the need for complex software to create and modify flash icons and create something extraordinary. Use Pixelied's online SVG maker and editor tool to get this done in moments. Here's how.
+        <div className="d-flex flex-column align-items-center">
+          <h2 className='display-3 steps'> How to edit an SVG file in 4 steps </h2>
+          <p  className='steps2'> Edit SVG files online without the need for complex software to create and modify flash icons and create something extraordinary. Use Pixelied's online SVG maker and editor tool to get this done in moments. Here's how.
           </p>
         </div>
 
@@ -252,7 +252,7 @@ const Home = () => {
           </div>
         </div>
         <br /><br />
-        <hr />
+        
 
         {/* FREQUENTLY ASKED QUESTIONS SECTION */}
 
