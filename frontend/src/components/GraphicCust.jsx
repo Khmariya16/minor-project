@@ -37,7 +37,7 @@ const GraphicCust = () => {
               <div className="sidebar-logo">
                 <img src="emo.jpg" alt="Logo" />
               </div>
-              <a href="#">Customizer</a>
+              
 
 
               <select onChange={(e) => {
