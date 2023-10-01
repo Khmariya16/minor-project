@@ -47,7 +47,7 @@ const Shapes = () => {
                 <rect x="10" y="10" width="80" height="60" fill={color} />
             </svg>
         ),
-        
+
         'tree': (
             <svg width={200} height={200} viewBox="-100 -100 200 200">
                 <g transform="translate(0 5)">
@@ -85,7 +85,7 @@ const Shapes = () => {
             </svg>
         ),
         'ellipse': (
-            <svg width={500} height={500} xmlns="http://www.w3.org/2000/svg">
+            <svg width={size} height={500} xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="60" cy="40" rx="40" ry="20" fill={color} />
             </svg>
         ),
