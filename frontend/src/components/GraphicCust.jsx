@@ -3,6 +3,7 @@ import Wave from './Wave';
 import Shapes from './Shapes';
 import Pattern from './Pattern';
 import Gradient from './Gradient';
+import Text from './Text';
 
 const GraphicCust = () => {
 
