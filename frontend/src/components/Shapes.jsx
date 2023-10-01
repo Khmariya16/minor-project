@@ -35,17 +35,19 @@ const Shapes = () => {
 
     const shapes = {
         'triangle': (
-            <svg width="100"
+            <svg width={size}
                 height="100"
                 xmlns="http://www.w3.org/2000/svg">
                 <polygon points="50,10 10,90 90,90" fill={color} />
             </svg>
         ),
+
         'rectangle': (
             <svg width="100" height="80" xmlns="http://www.w3.org/2000/svg">
                 <rect x="10" y="10" width="80" height="60" fill={color} />
             </svg>
         ),
+        
         'tree': (
             <svg width={200} height={200} viewBox="-100 -100 200 200">
                 <g transform="translate(0 5)">

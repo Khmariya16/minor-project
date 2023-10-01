@@ -19,7 +19,7 @@ const Wave = () => {
 
     const getSvgCode = () => {
         return `<svg
-        width="100%"
+        width="${size}"
         height="${height}"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -32,16 +32,17 @@ const Wave = () => {
             <div>
                 <textarea className="form-control w-100" rows={5} value={getSvgCode()} readOnly />
                 <input type="color" value={color} onChange={updateColor} />
-                <input type="range" min={10} max={100} value={size} onChange={updateSize} />
-                <input type="range" min={100} max={1000} value={height} onChange={updateHeight} />
-
-                <svg
-                    width="1000"
-                    height={size * 2}
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d={`M0 100 C100 200 400 0 500 100 L500 0 L0 0 Z`} fill={color} />
-                </svg>
+                <input type="range" min={10} max={500} value={size} onChange={updateSize} />
+                <input type="range" min={100} max={200} value={height} onChange={updateHeight} />
+                <div>
+                    <svg
+                        width={size}
+                        height={height}
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d={`M0 100 C100 200 400 0 500 100 L500 0 L0 0 Z M0 100 C100 200 400 0 500 100 L500 0 L0 0 Z`} fill={color} />
+                    </svg>
+                </div>
             </div>
         </div>
     );
