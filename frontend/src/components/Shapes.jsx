@@ -89,36 +89,36 @@ const Shapes = () => {
         ),
         'tree': (
             <svg width={500} height={500} viewBox="-100 -100 200 200">
-                        <polygon points="0,0 80,120 -80,120" fill="#234236" />
-                        <polygon points="0,-40 60,60 -60,60" fill="#0C5C4C" />
-                        <polygon points="0,-80 40,0 -40,0" fill="#38755B" />
-                        <rect x={-20} y={120} width={40} height={30} fill="brown" />
-                    </svg>
+                <polygon points="0,0 80,120 -80,120" fill={color} />
+                <polygon points="0,-40 60,60 -60,60" fill={color} />
+                <polygon points="0,-80 40,0 -40,0" fill={color} />
+                <rect x={-20} y={120} width={40} height={30} fill={color} />
+            </svg>
         ),
-        'man' :(
+        'man': (
             <svg
-                        className="gingerbread"
-                        width={500}
-                        height={500}
-                        viewBox="-100 -100 200 200"
-                    >
-                        <circle className="body" cx={0} cy={-50} r={30} />
-                        <circle className="eye" cx={-12} cy={-55} r={3} />
-                        <circle className="eye" cx={12} cy={-55} r={3} />
-                        <rect className="mouth" x={-10} y={-40} width={20} height={5} rx={2} />
-                        <line className="limb" x1={-40} y1={-10} x2={40} y2={-10} />
-                        <line className="limb" x1={-25} y1={50} x2={0} y2={-15} />
-                        <line className="limb" x1={25} y1={50} x2={0} y2={-15} />
-                        <circle className="button" cx={0} cy={-10} r={5} />
-                        <circle className="button" cx={0} cy={10} r={5} />
-                    </svg>
+                className="gingerbread"
+                width={500}
+                height={500}
+                viewBox="-100 -100 200 200"
+            >
+                <circle className="body" cx={0} cy={-50} r={30} />
+                <circle className="eye" cx={-12} cy={-55} r={3} />
+                <circle className="eye" cx={12} cy={-55} r={3} />
+                <rect className="mouth" x={-10} y={-40} width={20} height={5} rx={2} />
+                <line className="limb" x1={-40} y1={-10} x2={40} y2={-10} />
+                <line className="limb" x1={-25} y1={50} x2={0} y2={-15} />
+                <line className="limb" x1={25} y1={50} x2={0} y2={-15} />
+                <circle className="button" cx={0} cy={-10} r={5} />
+                <circle className="button" cx={0} cy={10} r={5} />
+            </svg>
         ),
-        'frozen' : (
+        'frozen': (
             <svg width={500} height={500} viewBox="-100 -100 200 200">
-                        <defs>
-                            <path
-                                id="branch"
-                                d="
+                <defs>
+                    <path
+                        id="branch"
+                        d="
   M 0 0 L 0 -90
   M 0 -20 L 20 -34
   M 0 -20 L -20 -34
@@ -126,19 +126,19 @@ const Shapes = () => {
   M 0 -40 L -20 -54
   M 0 -60 L 20 -74
   M 0 -60 L -20 -74"
-                                stroke="black"
-                                strokeWidth={5}
-                            />
-                        </defs>
-                        <use href="#branch" />
-                        <use href="#branch" transform="rotate(60)" />
-                        <use href="#branch" transform="rotate(120)" />
-                        <use href="#branch" transform="rotate(180)" />
-                        <use href="#branch" transform="rotate(240)" />
-                        <use href="#branch" transform="rotate(300)" />
-                    </svg>
+                        stroke={color}
+                        strokeWidth={5}
+                    />
+                </defs>
+                <use href="#branch" />
+                <use href="#branch" transform="rotate(60)" />
+                <use href="#branch" transform="rotate(120)" />
+                <use href="#branch" transform="rotate(180)" />
+                <use href="#branch" transform="rotate(240)" />
+                <use href="#branch" transform="rotate(300)" />
+            </svg>
         ),
-    
+
     }
 
 
