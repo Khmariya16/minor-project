@@ -10,4 +10,10 @@
 
 ![home2](https://github.com/Khmariya16/minor-project/assets/112842600/3a12bd9b-6aa3-4776-bd10-e3198b088f05)
 
+#CUSTOMIZER
+
+
+![cust](https://github.com/Khmariya16/minor-project/assets/112842600/71f88b56-69b1-48b9-b676-0ba2135251d9)
+
+
 
